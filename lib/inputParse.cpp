@@ -57,3 +57,14 @@ std::vector<std::string> split(std::string s, char sf){
     
     return out;
 }
+
+std::vector<char> split(std::string s)
+{
+    int i = 0;
+    std::vector<char> out;
+    while(i < s.length()){
+        out.push_back(s[i]);
+        i++;
+    }
+    return out;
+}
